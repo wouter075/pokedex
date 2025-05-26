@@ -14,6 +14,29 @@ Wat gaan we doen vandaag:Verbinden met de database via PHP
 Data ophalen en tonen
 Een zoekfunctie bouwen
 
+
+🧠 Waarom gebruiken we PDO?
+
+PDO staat voor PHP Data Objects en is een veilige en flexibele manier om met databases te werken in PHP. Hier zijn de belangrijkste redenen waarom we PDO gebruiken:
+✅ 1. Veiligheid (tegen SQL-injecties)
+
+    PDO maakt gebruik van prepared statements, wat betekent dat gebruikersinvoer automatisch wordt "geescaped".
+    Dit voorkomt SQL-injectie-aanvallen, waarbij kwaadwillenden proberen je database te manipuleren via formulieren of URL's.
+
+✅ 2. Flexibiliteit
+
+    PDO ondersteunt meerdere databasesystemen zoals MySQL, PostgreSQL, SQLite, enz.
+    Je hoeft alleen de DSN (data source name) aan te passen als je ooit overstapt naar een ander systeem.
+
+✅ 3. Betere foutafhandeling
+
+    PDO kan zo ingesteld worden dat het exceptions gooit bij fouten, wat het makkelijker maakt om bugs op te sporen en af te handelen.
+
+✅ 4. Nettere en leesbare code
+
+    De syntax van PDO is overzichtelijk en modern, wat het makkelijker maakt om mee te werken en te onderhouden.
+
+
 10 – 25 min: Verbinden met de database
 Uitleg + live coding:
 
