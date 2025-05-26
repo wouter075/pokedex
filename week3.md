@@ -37,6 +37,25 @@ PDO staat voor PHP Data Objects en is een veilige en flexibele manier om met dat
     De syntax van PDO is overzichtelijk en modern, wat het makkelijker maakt om mee te werken en te onderhouden.
 
 
+Zeker! Hier is een overzichtelijke vergelijkingstabel tussen **PDO** en **MySQLi** in PHP, zodat je studenten het verschil goed kunnen zien:
+
+| **Aspect**                     | **PDO**                                                                 | **MySQLi**                                                           |
+|-------------------------------|-------------------------------------------------------------------------|----------------------------------------------------------------------|
+| **Volledige naam**            | PHP Data Objects                                                       | MySQL Improved                                                      |
+| **Ondersteunde databases**    | ✅ Meerdere (MySQL, PostgreSQL, SQLite, etc.)                           | ❌ Alleen MySQL/MariaDB                                             |
+| **Prepared statements**       | ✅ Ja, met `prepare()` en `execute()`                                   | ✅ Ja, maar iets andere syntax                                      |
+| **Foutafhandeling**           | ✅ Exceptions via `PDO::ERRMODE_EXCEPTION`                              | ❌ Standaard foutmeldingen, tenzij handmatig afgevangen             |
+| **Objectgeoriënteerd**        | ✅ Volledig objectgeoriënteerd                                          | ✅ Zowel objectgeoriënteerd als procedureel                         |
+| **Syntax voorbeeld (query)**  | `$stmt = $pdo->query("SELECT * FROM pokemon");`                        | `$result = $mysqli->query("SELECT * FROM pokemon");`               |
+| **Syntax voorbeeld (prepared)** | `$stmt = $pdo->prepare("SELECT * FROM pokemon WHERE name = ?");`<br>`$stmt->execute([$name]);` | `$stmt = $mysqli->prepare("SELECT * FROM pokemon WHERE name = ?");`<br>`$stmt->bind_param("s", $name);`<br>`$stmt->execute();` |
+| **Gebruiksgemak**             | ✅ Kortere, leesbare syntax                                              | ⚠️ Meer regels nodig voor bind_param etc.                          |
+| **Aanbevolen voor nieuw werk**| ✅ Ja, veiliger en flexibeler                                           | ⚠️ Alleen als je zeker weet dat je alleen MySQL gebruikt            |
+
+---
+
+Wil je dat ik deze vergelijking ook als een visueel overzicht (bijv. een PDF of afbeelding) voor je maak om te delen met studenten?
+
+
 10 – 25 min: Verbinden met de database
 Uitleg + live coding:
 
