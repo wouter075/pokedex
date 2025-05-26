@@ -17,7 +17,7 @@ Een zoekfunctie bouwen
 10 – 25 min: Verbinden met de database
 Uitleg + live coding:
 
-Maak een bestand db_connect.php:
+Maak een bestand db.php:
 
 ```php
 <?php
@@ -50,7 +50,7 @@ Uitleg + voorbeeld:
 
 Maak een bestand index.php dat de Pokémon toont:
 ```php
-  <?php include 'db_connect.php'; ?>
+  <?php include 'db.php'; ?>
   <ul>
   <?php
   $stmt = $pdo->query("SELECT * FROM pokemon ORDER BY name");
