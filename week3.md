@@ -37,8 +37,6 @@ PDO staat voor PHP Data Objects en is een veilige en flexibele manier om met dat
     De syntax van PDO is overzichtelijk en modern, wat het makkelijker maakt om mee te werken en te onderhouden.
 
 
-Zeker! Hier is een overzichtelijke vergelijkingstabel tussen **PDO** en **MySQLi** in PHP, zodat je studenten het verschil goed kunnen zien:
-
 | **Aspect**                     | **PDO**                                                                 | **MySQLi**                                                           |
 |-------------------------------|-------------------------------------------------------------------------|----------------------------------------------------------------------|
 | **Volledige naam**            | PHP Data Objects                                                       | MySQL Improved                                                      |
@@ -52,9 +50,6 @@ Zeker! Hier is een overzichtelijke vergelijkingstabel tussen **PDO** en **MySQLi
 | **Aanbevolen voor nieuw werk**| ✅ Ja, veiliger en flexibeler                                           | ⚠️ Alleen als je zeker weet dat je alleen MySQL gebruikt            |
 
 ---
-
-Wil je dat ik deze vergelijking ook als een visueel overzicht (bijv. een PDF of afbeelding) voor je maak om te delen met studenten?
-
 
 10 – 25 min: Verbinden met de database
 Uitleg + live coding:
